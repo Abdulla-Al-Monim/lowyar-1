@@ -1,0 +1,330 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,400,400i,500,600,600i|Open+Sans:400,400i,600,600i,700,800&display=swap');
+
+/**
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+/*
+global css
+*/
+.container-fluid{
+	width: 100%;
+}
+.container{
+	width: 1140px;
+	margin: auto;
+}
+.row{
+	display: flex;
+}
+.col-lg-1{
+	width: 100%;
+}
+.col-lg-3{
+	width: 33.33%;
+	float: left;
+}
+.col-lg-4{
+	width: 40%;
+	float: left;
+}
+.col-lg-6{
+	width: 60%;
+	float: left;
+}
+.col-lg-7{
+	width: 66.66%;
+	float: left;
+}
+.col-lg-5{
+	width: 50%;
+	float: left;
+}
+.col-lg-2{
+	width: 25%;
+	float: left;
+}
+.col-lg-8{
+	width: 20%;
+	float: left;
+
+}
+h1{
+    color: #28377e;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+p{
+    color: #b1b0b1;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+
+}
+ul li{
+	display: inline-block;
+}
+
+.text-center{
+	text-align: center;
+	margin: 0 auto;
+}
+.text-right{
+	text-align: right;
+	margin: auto;
+}
+
+/*
+Header section 
+*/
+.head{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+.head ul li a{
+	padding: 5px;
+	margin-left: 10px;
+	font-size: 20px;
+	color: #1f4f87;
+}
+.head h1{
+	letter-spacing: 5px;
+} 
+
+
+/*
+banner section
+*/
+.banner{
+	background: url(../images/lawyer_pro.png) no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 500px;
+	position: relative;
+}
+
+.contant{
+	width: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+.banner h1{
+	color: white;
+	font-size: 50px;
+
+}
+.banner .icon{
+	position: absolute;
+	color: white;
+	bottom: 20%;
+	left: 50%;
+	transform: translate(-50%,-20%);
+	animation: any-icon 1s linear infinite;
+	animation-direction: alternate;
+}
+.banner .icon a i{
+	color: white;
+}
+@keyframes any-icon{
+	0%{
+		transform: translate(-50%,0%);
+	}
+	100%{
+		transform: translate(-50%,-50%);
+	}
+}
+
+/* who we are scetion*/
+.who-we-are-content{
+	margin-top: 120px;
+	position: relative;
+}
+.who-we-are-content::before{
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 4px;
+	background: #f2622c;
+}
+.who-we-are-content h1{
+	margin-top: 10px;
+}
+.who-we-are-content p{
+	margin-top: 20px;
+	padding-right: 100px;
+}
+.who-image{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.who-image img{
+	width: 60%;	
+}
+/* attorneys*/
+.attorneys{
+	background: url(../images/lawyer_pro-1.png) no-repeat;
+	background-size: cover;	
+	width: 100%;
+
+	
+}
+.attorneys-content{
+	position: relative;
+	margin-top: 260px;
+}
+.attorneys h1{
+	color: white;
+	width: 100px;
+	margin-top: 30px;
+}
+.attorneys p{
+	color: #929dcf;
+	width: 80%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.attorneys a{
+	color: #f2622c;
+	font-size: 14px;
+
+}
+.attorneys-content::before{
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 4px;
+	background: #f2622c;
+}
+.attorneys-i{
+	margin: 100px 0;
+}
+.attorneys-img{
+	width: 100%;
+}
+.attorneys-img img 
+{
+	width: 90%;
+	margin-top: 30px;
+}
+/*language section */
+.language{
+	margin-bottom: 80px;
+}
+.language-contant{
+	position: relative;
+	margin-top: 100px;
+}
+.language-contant::before{
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 4px;
+	background: #f2622c;
+	top: -20px;
+	margin-left: -20px;
+}
+.language h1{
+		margin-top: 50px;
+}
+.language a{
+	color: #f2622c;
+	font-size: 12px;
+	text-transform: uppercase;
+
+
+
+}
+.language-text{
+	
+}
+.language-text h1{
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+.language-text p{
+	margin-top: 30px;
+	width: 90%;
+	margin-bottom: 15px;
+}
+/* coontract form */
+.contract{
+	background: #28377e;
+}
+.contract-contant{
+	position: relative;
+}
+.contract h1{
+	color: white;
+	margin-top: 80px;
+}
+.contract-contant::before{
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 4px;
+	background: #f2622c;
+	top: -20px;
+	margin-left: -30px;
+}
+.contract-input{
+	margin: 80px 0px;
+}
+
+.contract-input input,textarea,button{
+	width: 80%;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #4759a7;
+	margin-top: 10px;
+	padding: 5px 10px;
+	
+}
+.contract-input input::placeholder{
+	color: white;
+}
+.contract-input textarea{
+	height: 50px;
+	color: white;
+
+}
+.contract-input button{
+	border:none;
+	background: #f2622c;
+	width: 21%;
+	padding: 10px 0;
+	margin-top: 20px;
+}
+h2{
+	color: transparent;
+}
+/* footer section */
+.footer{
+	background: #0c1234;
+	padding:30px 0;
+}
+.footer-left a{
+	color: #b1b7dd;
+}
+.footer-right a{
+	margin-left: 20px;
+
+}
+.footer-right a i{
+	color: #b1b7dd;
+}
